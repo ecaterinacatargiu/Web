@@ -1,0 +1,25 @@
+.gradient1{
+	height: 350px;
+	width: 1525px;
+    	margin-top: 3px;
+  	background-image: linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,0), rgba(255,0,0,1));		
+	background-repeat: no-repeat;
+}
+
+.line {
+	position:absolute;
+  	font-weight: bold;
+	width:100%;
+	top: 50%;
+	color = black;
+	
+}
+
+.gradient2{
+	height: 350px;
+	width: 1525px;
+    	margin-top: 3px;
+  	background-image: linear-gradient(to right, rgba(0,0,255,1), rgba(0,0,255,0), rgba(0,0,255,1));		
+	background-repeat: no-repeat;
+} 
+

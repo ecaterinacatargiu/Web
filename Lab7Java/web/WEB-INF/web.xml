@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Authentification.Login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlett</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Authentification.Register</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/RegisterServlett</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>Authentification.Logout</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlett</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>Operations.UpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlett</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetAllServlet</servlet-name>
+        <servlet-class>Operations.GetAllServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetAllServlet</servlet-name>
+        <url-pattern>/GetAllServlett</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetUserByNameServlet</servlet-name>
+        <servlet-class>Operations.GetUserByNameServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetUserByNameServlet</servlet-name>
+        <url-pattern>/GetUserByNameServlett</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>Authentification.UploadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlett</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>

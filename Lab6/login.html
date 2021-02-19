@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <title>Lab6 -PHP</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function login()
+            {
+                xhrGet = new XMLHttpRequest();
+                xhrGet.onreadystatechange=function(){
+                    if (this.readyState==4 && this.status==200) {
+                        if(this.responseText == "false")
+                        {
+                            document.getElementById("response").innerHTML="<p>User doesn't exist!</p>";
+
+                        }
+                        else
+                        {
+                            document.getElementById("response").innerHTML="<p>Logged in successful!</p>";
+                        }
+                    }
+                }
+                xhrGet.open("GET", "login.php?user="+document.getElementById("user").value+"&password="+document.getElementById("password").value, true);
+                xhrGet.send();
+            }
+        </script>
+    </head>
+
+    <body class="background">
+        <div class="form">
+            <p>
+                <label>Username:</label>
+                <input type="text" class="text" id="user"/>
+            </p>
+
+            <p>
+                <label>Password:</label>
+                <input type="password" class="text" id="password"/>
+            </p>
+
+            <button type="button" class="text" onclick="login()">Log in</button>
+            
+            <p id="response"></p>
+        </div>
+    </body>
+</html>

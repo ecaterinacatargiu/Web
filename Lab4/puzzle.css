@@ -1,0 +1,17 @@
+#puzzle{
+    width: 350px;
+    height: 350px;
+    position: 10px solid black;
+}
+
+#puzzle img {
+    margin: 0;
+    padding: 0;
+}
+  
+
+.puzzlepiece {
+    float: left;
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }

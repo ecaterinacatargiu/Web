@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    ul.nav.nav-tabs li:not(active) a {
+        color: white;
+    }
+
+    ul.nav.nav-tabs li.active a {
+       
+        border-right: 10px solid #ac7eb0;
+    }
+
+    div {
+        margin-right: 5px;
+    }
+</style>
+
+<ul class="nav nav-tabs">
+    <li  class="active"><a data-toggle="tab" href="#firstTab">View All Logs</a></li>
+    <li><a data-toggle="tab" href="#secondTab">Add New Log</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="firstTab" class="tab-pane fade in active">
+        @Html.Action("GetAll")
+       
+    
+    </div>
+    <div id="secondTab" class="tab-pane fade in">@Html.Action("AddOrEdit")</div>
+
+</div>

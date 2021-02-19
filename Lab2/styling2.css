@@ -1,0 +1,18 @@
+.thingToMove{
+	width: 100px;
+	height: 100px;
+	transition: width 10s, transform 10s;
+	color: white;
+	background-color: blue;
+
+}
+
+.thingToMove:hover {
+	width:100px;
+	transform: translate(1400px,600px)
+		   rotate(-360deg);
+	color: black;
+	background-color: red;
+    	
+
+}
